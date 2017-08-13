@@ -129,3 +129,8 @@ header .search-menu > li:hover .sub-menu {
     float: right;
     cursor: pointer;
 }
+
+/* === Helpers === */
+img {
+    max-width: 100%;
+}

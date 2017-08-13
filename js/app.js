@@ -547,6 +547,8 @@ var app = {
         var scrollPosition = html.data('scroll-position');
 
         html.css('overflow', html.data('previous-overflow'));
+
+        if(scrollPosition)
         window.scrollTo(scrollPosition[0], scrollPosition[1]);
     },
 
@@ -738,7 +740,7 @@ var router = Sammy("#main", function(context) {
                 var template = Handlebars.compile(source);
                 $(".post-list").html(template({"items": res}));
             }
-            
+
             app.updateUIState("list");
             app.hideProgress();
         }, "json");
