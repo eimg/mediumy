@@ -153,7 +153,7 @@ header .sub-menu {
     padding: 15px 20px 5px 20px;
     list-style: none;
     position: absolute;
-    z-index: 99998;
+    z-index: 99994;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -570,6 +570,7 @@ header .sub-menu li .fa {
 /* === Model Dialogs - Login, Register, Profile === */
 .overlay {
     position: fixed;
+    z-index: 99995;
     top: 0;
     left: 0;
     width: 100%;
@@ -581,6 +582,7 @@ header .sub-menu li .fa {
 
 .model {
     position: fixed;
+    z-index: 99996;
     width: 30%;
     top: 10%;
     left: 33%;

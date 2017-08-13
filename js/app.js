@@ -584,12 +584,20 @@ var app = {
 
     showLogin: function() {
         $(".overlay, .login-model").show();
+
+        if($(".search-menu .mobile-menu-trigger").is(":visible"))
+            $(".search-menu .mobile-menu-trigger").click();
+
         $(".login-model input").val("");
         $(".login-model input:first").focus();
     },
 
     showRegister: function() {
         $(".overlay, .register-model").show();
+
+        if($(".search-menu .mobile-menu-trigger").is(":visible"))
+            $(".search-menu .mobile-menu-trigger").click();
+
         $(".register-model input").val("");
         $(".register-model input:first").focus();
     },
@@ -602,6 +610,10 @@ var app = {
             var template = Handlebars.compile(source);
             $(".profile-model").html(template(user));
             $(".overlay, .profile-model").show();
+
+            if($(".search-menu .mobile-menu-trigger").is(":visible"))
+                $(".search-menu .mobile-menu-trigger").click();
+
             $(".profile-model input:first").focus();
             app.hideProgress();
         }, function() {
