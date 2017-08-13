@@ -908,6 +908,11 @@ header .sub-menu li .fa {
 
 .screen, .state, .auth-show,
 .mobile-search, .mobile-search-trigger {
+    display: none ;
+}
+
+header .menu li .link.mobile-menu-trigger,
+header .search-menu .link.mobile-menu-trigger {
     display: none;
 }
 

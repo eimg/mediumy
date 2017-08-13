@@ -29,8 +29,9 @@
         <span class="fa fa-search desktop-search-trigger" onclick="$(this).next().toggle().focus()"></span>
         <input type="text" id="search-input" placeholder="ရှာရန်" onkeydown="app.search(this, event)">
     </li>
-    <li onclick="app.toggleSubMenu(this)">
-        <span class="link"><span class="fa fa-angle-down"></span></span>
+    <li>
+        <span class="link desktop-menu-trigger"><span class="fa fa-angle-down"></span></span>
+        <span class="link mobile-menu-trigger" onclick="app.toggleSubMenu(this)"><span class="fa fa-angle-down"></span></span>
         <ul class="sub-menu">
             {{#if auth}}
             <li><span class="link" onclick="app.showProfile()">ပရိုဖိုင်ပြင်ဆင်</span></li>

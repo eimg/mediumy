@@ -504,26 +504,22 @@ var app = {
     },
 
     toggleSubMenu: function(ele) {
-        if(app.mobile) {
-            if($(".sub-menu", ele).is(":visible")) {
+        if($(ele).next(".sub-menu").is(":visible")) {
+            app.unlockScroll();
+            $(ele).next(".sub-menu").hide();
+            $(".fa", ele).attr("class", $(".fa", ele).attr("data-class"));
+        } else {
+            if(app.scrollLocked) {
+                $(".sub-menu").hide();
+                $(".fa", ele).attr("class", $(this).attr("data-class"));
                 app.unlockScroll();
-                $(".sub-menu", ele).hide();
-                $(".fa", ele).attr("class", $(".fa", ele).attr("data-class"));
-            } else {
-                if(app.scrollLocked) {
-                    $(".sub-menu").hide();
-                    $(".fa", ele).attr("class", $(this).attr("data-class"));
-                    app.unlockScroll();
-                }
-
-                app.lockScroll();
-                $(".fa", ele).attr("data-class", $(".fa", ele).attr("class"));
-                $(".fa", ele).attr("class", "fa fa-close");
-                $(".sub-menu", ele).show();
             }
-        }
 
-        return false;
+            app.lockScroll();
+            $(".fa", ele).attr("data-class", $(".fa", ele).attr("class"));
+            $(".fa", ele).attr("class", "fa fa-close");
+            $(ele).next(".sub-menu").show();
+        }
     },
 
     // store current scroll position
@@ -632,15 +628,6 @@ var app = {
             self.redirect("#/");
             app.hideProgress();
         });
-    },
-
-    // check if current client is mobile
-    mobile: function() {
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            return true;
-        }
-
-        return false;
     },
 
     /* === Editors === */
