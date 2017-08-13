@@ -1,0 +1,32 @@
+{
+  "name": "mya",
+  "authors": [
+    "Ei Maung <eimg@fairwayweb.com>"
+  ],
+  "description": "Medium inspired authoring tool in Myanmar language",
+  "main": "js/app.js",
+  "keywords": [
+    "jquery",
+    "blog",
+    "medium",
+    "php"
+  ],
+  "license": "MIT",
+  "homepage": "http://eimaung.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0",
+    "medium-editor": "^5.23.2",
+    "medium-editor-autolist": "*",
+    "medium-editor-insert-plugin": "^2.4.1",
+    "jquery-validation": "jquery-validate#^1.17.0",
+    "moment": "^2.18.1",
+    "sammy": "^0.7.6"
+  }
+}

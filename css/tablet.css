@@ -1,0 +1,131 @@
+html, body {
+    width: 100%;
+}
+
+header {
+    padding: 20px 20px 5px;
+    margin: 0 auto;
+}
+
+header .head-container {
+    width: auto;
+    min-height: auto;
+}
+
+header .search-menu {
+    margin: 5px 0 0;
+}
+
+header .menu > li:hover .sub-menu,
+header .search-menu > li:hover .sub-menu {
+    display: none;
+}
+
+.post-list {
+    width: auto;
+    margin: 20px 0 0 20px;
+}
+
+.post-item {
+    width: 46%;
+    margin: 0 20px 20px 0;
+}
+
+.post-view {
+    width: auto;
+    padding: 0 20px 0 20px;
+}
+
+.author-info {
+    width: 80%;
+}
+
+.comment-view {
+    padding: 20px 0;
+}
+
+.comments {
+    width: auto;
+    margin: 0 15px;
+}
+
+#main {
+    padding-bottom: 40px;
+}
+
+.model {
+    box-sizing: border-box;
+    width: 60%;
+    top: 10%;
+    left: 20%;
+    padding: 30px 20px 20px;
+    display: none;
+}
+
+.model-message-body {
+    left: 25%;
+    width: 50%;
+}
+
+.model-body {
+    margin-top: 0;
+}
+
+.model-body input,
+.model-body textarea,
+.model-body div.editable {
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+.model-body button {
+    margin-top: 20px;
+}
+
+
+/* === Small Screen Search === */
+.mobile-search-trigger {
+    display: inline-block;
+}
+
+.desktop-search-trigger {
+    display: none;
+}
+
+.mobile-search {
+    position: absolute;
+    z-index: 99997;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 0 3px #aaa;
+    overflow: hidden;
+    font-size: 1.3em;
+}
+
+.mobile-search div {
+    width: 90%;
+    float: left;
+    display: flex;
+}
+
+.mobile-search input {
+    border: 0 none;
+    background: transparent;
+    line-height: 1.6em;
+    margin-left: 10px;
+    width: 90%;
+}
+
+.mobile-search .fa {
+    color: #aaa;
+}
+
+.mobile-search .fa-close {
+    float: right;
+    cursor: pointer;
+}

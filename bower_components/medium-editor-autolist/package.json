@@ -1,0 +1,21 @@
+{
+  "name": "medium-editor-autolist",
+  "version": "1.0.0",
+  "description": "An extension for medium editor which auto creates list.",
+  "main": "dist/autolist.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gruberro/medium-editor-autolist.git"
+  },
+  "keywords": [
+    "medium-editor",
+    "extension",
+    "autolist"
+  ],
+  "author": "Varun Raj <mailme@varunraj.in>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gruberro/medium-editor-autolist/issues"
+  },
+  "homepage": "https://github.com/gruberro/medium-editor-autolist#readme"
+}

@@ -1,0 +1,928 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansmyanmar.css);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Myanmar', roboto, myanmar3, padauk, sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+    background: white;
+    color: #333;
+    word-wrap: break-word;
+}
+
+a {
+    color: #111;
+    outline: 0 none;
+}
+
+/* === Header ===*/
+
+header {
+    padding: 10px 0 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+    background: #f5f5f5;
+}
+
+header .head-container {
+    width: 1000px;
+    min-height: 56px;
+    margin: 0 auto;
+}
+
+header .company {
+    float: left;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+header .company img {
+    float: left;
+}
+
+header .company-name {
+    float: left;
+    margin: 6px 0 0 20px;
+    padding: 8px 0 8px 20px;
+    border-left: 1px solid #ddd;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+header .company-name a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header .search-menu {
+    margin: 5px -15px 0 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+header .search-menu > li {
+    float: left;
+    margin: 0 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+header .search-menu .fa {
+    color: #ccc;
+}
+
+header .search-menu .fa-search {
+    margin-left: 30px;
+}
+
+header .search-menu .fa:active,
+header .search-menu .fa:hover {
+    color: #888;
+}
+
+header .search-menu .fa-angle-down {
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+header .search-menu input {
+    background: transparent;
+    padding: 2px 6px;
+    line-height: 1.6em;
+    outline: 0 none;
+    border: 0 none;
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
+
+header .search-menu a,
+header .search-menu .link {
+    display: block;
+    padding: 0 10px;
+    font-size: 0.8em;
+    color: #aaa;
+    text-decoration: none;
+}
+
+header .search-menu .link:hover,
+header .search-menu .link:active,
+header .search-menu a:active,
+header .search-menu a:hover {
+    color: #666;
+}
+
+header .search-menu .link.primary,
+header .search-menu a.primary {
+    color: #2ECC71;
+}
+
+header .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    clear: both;
+}
+
+header .menu > li {
+    float: left;
+    margin-right: 30px;
+}
+
+header .menu li a,
+header .menu li .link {
+    color: #aaa;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding-bottom: 5px;
+    display: block;
+    cursor: pointer;
+}
+
+header .menu li a.active,
+header .menu li a:hover
+{
+    color: #666;
+}
+
+header .sub-menu {
+    margin: 0;
+    padding: 15px 20px 5px 20px;
+    list-style: none;
+    position: absolute;
+    z-index: 99998;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #eee;
+    display: none;
+}
+
+header .sub-menu:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 20px;
+    top: -24px;
+    border: 12px solid;
+    border-color: transparent transparent #ddd transparent;
+}
+
+header .sub-menu:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 22px;
+    top: -20px;
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+header .search-menu .sub-menu {
+    right: -7px;
+    padding: 15px 5px 10px;
+}
+
+header .search-menu .sub-menu li {
+    width: 150px;
+}
+
+header .search-menu .sub-menu:before {
+    left: auto;
+    right: 11px;
+}
+
+header .search-menu .sub-menu:after {
+    left: auto;
+    right: 13px;
+}
+
+header .menu > li:hover .sub-menu,
+header .search-menu > li:hover .sub-menu {
+    display: block;
+}
+
+header .sub-menu li .fa {
+    margin-right: 5px;
+}
+
+/* === Content (Post List & Layout) ===*/
+
+#main {
+    padding-bottom: 100px;
+}
+
+.post-list {
+    width: 1000px;
+    margin: 2em auto;
+    overflow: hidden;
+}
+
+.search-title {
+    color: #999;
+    margin: 0 0 20px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #eee;
+    font-weight: normal;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.post-item {
+    width: 31%;
+    margin: 0 1% 2em 1%;
+    float: left;
+    height: 260px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #666;
+}
+
+.post-feature {
+    display: block;
+    height: 100px;
+    background: #4ac396 no-repeat center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 15px 20px;
+    height: 3em;
+    overflow: hidden;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-meta {
+    margin-top: 4px;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.post-author-pic {
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: #aaa;
+
+    background: #f5f5f5 no-repeat center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+
+    font-size: 0.6em;
+    text-align: center;
+    border-radius: 32px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.post-author-info {
+    font-size: 0.8em;
+    float: left;
+    line-height: 1.1em;
+    margin-top: 4px;
+}
+
+.post-author-info b {
+    display: block;
+    font-weight: normal;
+}
+
+.post-author-info time {
+    font-size: 0.6em;
+    color: #aaa;
+}
+
+.post-view {
+    width: 760px;
+    margin: 0 auto;
+}
+
+.post-view-meta {
+    color: #999;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.post-view-meta div {
+    float: left;
+    margin-right: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post-view-meta div span {
+    display: block;
+    float: left;
+}
+
+.post-view-meta .fa {
+    font-size: 1.4em;
+    margin: 6px 8px 0 0;
+}
+
+.post-view-meta .fa-heart-o,
+.post-view-meta .fa-heart {
+    color: #2ECC71;
+}
+
+.author {
+    margin: 2em 0;
+    position: relative;
+}
+
+.author a {
+    color: inherit;
+}
+
+.author-name a {
+    text-decoration: none;
+}
+
+.author-pic {
+    float: left;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    color: #aaa;
+
+    background: #f1f1f1 no-repeat center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+
+    font-size: 0.6em;
+    text-align: center;
+    border-radius: 64px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    text-align: center;
+    overflow: hidden;
+}
+
+.author-info {
+    float: left;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+    line-height: 1.2em;
+}
+
+.pub-time, .author-pos {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    margin: 2px 0;
+}
+
+.delete {
+    position: absolute;
+    display: block;
+    top: 122px;
+    left: -60px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    border-radius: 36px;
+    line-height: 40px;
+    font-size: 1.2em;
+    color: #999;
+    background: #f1f1f1;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.delete:hover,
+.delete:active {
+    opacity: 1;
+    color: #E74C3C;
+}
+
+.editable-title {
+    font-family: inherit;
+    line-height: 2em;
+    font-size: 2em;
+    font-weight: bold;
+    outline: 0 none;
+    border: 0 none;
+    color: inherit;
+    min-height: 2em;
+}
+
+/* === Comment === */
+.comment-view {
+    background: #fafafa;
+    padding: 50px 0;
+    border-top: 1px solid #eee;
+    display: none;
+}
+
+.comments {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.comment-title {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.comment-form,
+.comment-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 0 3px #eee;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.comment-form .comment-placeholder {
+    color: #999;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.comment-form .comment-input {
+    display: none;
+}
+
+.comment-form input,
+.comment-form textarea {
+    font-family: inherit;
+    background: #fff;
+    border: 0 none;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 4px;
+    resize: none;
+}
+
+.comment-form input {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.comment-form textarea {
+    resize: none;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.comment-form .inline-error {
+    color: #E74C3C;
+    font-size: 0.8em;
+    margin-left: 15px;
+    display: none;
+}
+
+.link-button {
+    font-size: 0.9em;
+    padding: 2px 20px;
+    border: 1px solid #2ECC71;
+    border-radius: 40px;
+    color: #2ECC71;
+    cursor: pointer;
+}
+
+.comment-author-pic {
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: #aaa;
+
+    background: #f5f5f5 no-repeat center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+
+    font-size: 0.6em;
+    text-align: center;
+    border-radius: 32px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.comment-author-info {
+    float: left;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+.comment-author-info b {
+    color: #2ECC71;
+    font-weight: normal;
+    display: block;
+}
+
+.comment-author-info time {
+    color: #999;
+    font-size: 0.8em;
+}
+
+.comment-body {
+    clear: both;
+    color: #555;
+}
+
+.delete-comment {
+    float: right;
+    width: 24px;
+    height: 24px;
+    line-height: 28px;
+    color: #999;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.delete-comment:hover,
+.delete-comment:active {
+    color: #E74C3C;
+    opacity: 1;
+}
+
+/* === Model Dialogs - Login, Register, Profile === */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.8;
+    display: none;
+}
+
+.model {
+    position: fixed;
+    width: 30%;
+    top: 10%;
+    left: 33%;
+    padding: 50px 40px 40px 40px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 0 20px #e5e5e5;
+    display: none;
+}
+
+.model .fa-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #aaa;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.model-head {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    color: #aaa;
+
+    background: #fff no-repeat center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+
+    text-align: center;
+    border-radius: 64px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.profile-pic .fa-camera {
+    opacity: 0.6;
+}
+
+.profile-pic:hover .fa-camera {
+    opacity: 1;
+}
+
+.model-title {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.model-title.user-name {
+    margin: 10px 0 20px 0;
+}
+
+.model-body {
+    margin-top: 10px;
+}
+
+.model-body input,
+.model-body textarea,
+.model-body div.editable {
+    width: 100%;
+    padding: 0;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    background: #fff;
+    border: 0 none;
+    border-bottom: 1px solid #ddd;
+    margin-top: 20px;
+    font-family: inherit;
+}
+
+.model-body div.editable {
+    color: #555;
+    outline: 0 none;
+    overflow: hidden;
+}
+
+.model-body div.editable:empty:before{
+    content: attr(placeholder);
+    display: block; /* For Firefox */
+    color: #999;
+}
+
+.model-body input:required,
+.model-body textarea:required {
+    box-shadow: none;
+}
+
+.model-body button {
+    margin-top: 40px;
+    background: #3498DB;
+    color: #fff;
+    border: 0 none;
+    width: 100%;
+    font-size: 1.1em;
+    padding: 15px 0;
+    cursor: pointer;
+    outline: 0 none;
+}
+
+.model .error-message {
+    font-size: 0.65em;
+    line-height: 2em;
+    color: #E74C3C;
+    display: none;
+    transition: color 5s ease;
+}
+
+.model .model-action {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.model .link {
+    color: #999;
+    font-size: 0.8em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.model label {
+    font-size: 0.6em;
+    line-height: 1.5em;
+    color: #3498DB;
+    display: block;
+    margin: 0;
+}
+
+.profile-model input[name=author] {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.model-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    display: none;
+}
+
+.model-message .fa-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #ccc;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.model-message .fa-close:hover,
+.model-message .fa-close:active {
+    color: #aaa;
+}
+
+.model-message-body {
+    position: fixed;
+    top: 35%;
+    left: 34%;
+    width: 30%;
+    text-align: center;
+}
+
+.model-message-buttons {
+    margin-top: 20px;
+}
+
+.model-message-buttons button {
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding: 6px 20px;
+    cursor: pointer;
+}
+
+.model-message-buttons button:hover,
+.model-message-buttons button:active {
+    border-color: #aaa;
+}
+
+/* === Content (Editor & View) === */
+
+.editable-body {
+    outline: 0 none;
+}
+
+.editable-body p,
+.editable-body ul,
+.editable-body ol,
+.editable-body pre,
+.medium-insert-images
+{
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.editable-body ul,
+.editable-body ol
+{
+    line-height: 3em;
+}
+
+.editable-body h2 {
+    font-size: 1.6em;
+}
+
+.editable-body h3 {
+    font-size: 1.4em;
+}
+
+.editable-body h2,
+.editable-body h3
+{
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+
+.editable-body h2.sub-title,
+.editable-body h3.sub-title
+{
+    color: #999;
+    font-weight: normal;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+.editable-body blockquote {
+    font-size: 0.9em;
+    border-left: 5px solid #666;
+    font-style: italic;
+    margin: 0 0 2em 2em;
+    padding-left: 2em;
+    color: #666;
+}
+
+.editable-body pre {
+    line-height: 1.5em;
+    background: #555;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+/* === Medium Editor Fixes === */
+
+/* Placeholder position fix */
+.medium-editor-placeholder-relative::after,
+.medium-editor-placeholder::after,
+.medium-editor-insert-plugin.medium-editor-placeholder::after
+{
+    color: #999;
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+/* Medium Editor Insert Addons - beagle themes - toolbar buttons fix */
+.medium-editor-toolbar li button:hover,
+.medium-editor-toolbar li .medium-editor-button-active
+{
+    background-color: transparent;
+}
+
+/* Medium Editor Insert Addons - Insert Button Style - enhancement */
+.editable-body .medium-insert-buttons .medium-insert-buttons-addons {
+    line-height: 1em;
+}
+
+.editable-body .medium-insert-buttons .medium-insert-buttons-addons li {
+    margin: 0 2px;
+}
+
+.editable-body .medium-insert-buttons button {
+    color: #666;
+    border: 1px solid #666;
+}
+
+.medium-insert-images figure figcaption,
+.mediumInsert figure figcaption,
+.medium-insert-embeds figure figcaption,
+.mediumInsert-embeds figure figcaption,
+.medium-insert-images .figure .figcaption,
+.mediumInsert .figure .figcaption,
+.medium-insert-embeds .figure .figcaption,
+.mediumInsert-embeds .figure .figcaption
+{
+    color: #aaa;
+    font-size: .8em;
+    font-style: italic;
+}
+
+/* === Progress Bar === */
+
+.progress {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #28C76F;
+    height: 2px;
+    animation: progress 1s infinite;
+    display: none;
+}
+
+@keyframes progress {
+  0% { width: 0; left: 0; }
+  50% { width: 100%; left: 0; }
+  100% { width: 0; left: 100%; }
+}
+
+/* === Helpers === */
+
+.screen, .state, .auth-show,
+.mobile-search, .mobile-search-trigger {
+    display: none;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+*:focus {
+    outline: none;
+}
+
+small {
+    color: #aaa;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "medium-editor-autolist",
+  "authors": [
+    "Varun Raj <mailme@varunraj.in>"
+  ],
+  "description": "An extension for medium editor which auto creates list.",
+  "main": "dist/autolist.js",
+  "moduleType": [],
+  "keywords": [
+    "medium-editor",
+    "extension",
+    "autolist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/varun-raj/medium-editor-autolist",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "medium-editor": "^5.14.4"
+  },
+  "_release": "d7e0173173",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d7e017317363092a811dbea754e2ac51c3495c2c"
+  },
+  "_source": "https://github.com/varun-raj/medium-editor-autolist.git",
+  "_target": "*",
+  "_originalSource": "medium-editor-autolist",
+  "_direct": true
+}
