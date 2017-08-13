@@ -13,7 +13,7 @@ header .head-container {
 }
 
 header .search-menu {
-    margin: 5px 0 0;
+    /**/
 }
 
 header .menu > li:hover .sub-menu,
@@ -131,6 +131,6 @@ header .search-menu > li:hover .sub-menu {
 }
 
 /* === Helpers === */
-img {
-    max-width: 100%;
+.editable-body img {
+    width: 100%;
 }

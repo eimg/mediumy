@@ -55,8 +55,8 @@
                             <li><a href="http://jquery.com/">jQuery</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://eimaung.com/">ဖန်တီးသူ</a></li>
                     <li><a href="https://github.com/eimg/mediumy">ဒေါင်းလုပ်ရယူရန်</a></li>
+                    <li><a href="https://eimaung.com/">ဖန်တီးသူ</a></li>
                 </ul>
                 </div>
             </div>

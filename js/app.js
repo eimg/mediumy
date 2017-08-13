@@ -508,13 +508,17 @@ var app = {
             if($(".sub-menu", ele).is(":visible")) {
                 app.unlockScroll();
                 $(".sub-menu", ele).hide();
+                $(".fa", ele).attr("class", $(".fa", ele).attr("data-class"));
             } else {
                 if(app.scrollLocked) {
                     $(".sub-menu").hide();
+                    $(".fa", ele).attr("class", $(this).attr("data-class"));
                     app.unlockScroll();
                 }
 
                 app.lockScroll();
+                $(".fa", ele).attr("data-class", $(".fa", ele).attr("class"));
+                $(".fa", ele).attr("class", "fa fa-close");
                 $(".sub-menu", ele).show();
             }
         }
@@ -983,6 +987,9 @@ function checkInStore(data) {
 /* === Runing App === */
 $(function() {
     router.run();
+
+    // enable :active in mobile safari
+    document.addEventListener("touchstart", function(){}, true);
 
     // Custome editor event to handle save button state
     $(".editable-title, .editable-body").keyup(function() {
