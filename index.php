@@ -46,8 +46,8 @@
                 <ul class="menu">
                     <li><a href="#/">ပင်မစာမျက်နှာ</a></li>
                     <li>
-                        <span class="link desktop-menu-trigger">နည်းပညာများ <span class="fa fa-caret-down"></span></span>
-                        <span class="link mobile-menu-trigger" onclick="app.toggleSubMenu(this)">နည်းပညာများ <span class="fa fa-caret-down"></span></span>
+                        <span class="link desktop-menu-trigger">နည်းပညာများ <span class="fa fa-angle-down"></span></span>
+                        <span class="link mobile-menu-trigger" onclick="app.toggleSubMenu(this)">နည်းပညာများ <span class="fa fa-angle-down"></span></span>
                         <ul class="sub-menu">
                             <li><a href="https://yabwe.github.io/medium-editor/">Medium Editor</a></li>
                             <li><a href="http://linkesch.com/medium-editor-insert-plugin/">Medium Editor Insert Plugin</a></li>

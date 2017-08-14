@@ -10,8 +10,8 @@
         <form id="register-form">
             <input type="text" name="author" placeholder="အမည်">
             <div class="error-message register-author-error">အမည်ထည့်သွင်းပေးပါ</div>
-            <input type="text" name="email" placeholder="အီးလ်မေး">
-            <div class="error-message register-email-error">အီးလ်မေးလိပ်စာမှန်အောင်ပေးပါ</div>
+            <input type="text" name="email" placeholder="အီးမေးလ်">
+            <div class="error-message register-email-error">အီးမေးလ်လိပ်စာမှန်အောင်ပေးပါ</div>
             <input type="password" name="password" placeholder="ပက်စ်ဝပ်">
             <div class="error-message register-password-error">ပက်စ်ဝပ်ခပ်ရှည်ရှည်ပေးပါ</div>
             <input type="password" name="password_again" placeholder="ပက်စ်ဝပ်နောက်တစ်ကြိမ်">

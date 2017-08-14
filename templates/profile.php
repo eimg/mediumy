@@ -12,8 +12,8 @@
             <div class="error-message profile-author-error">အမည်ပေးပါ</div>
             <div contenteditable="true" class="editable description" placeholder="ကိုယ်ရေးအကျဉ်း">{{description}}</div>
             <div class="error-message profile-description-error">ကိုယ်ရေးအကျဉ်းပေးပါ</div>
-            <input type="text" placeholder="အီးလ်မေး" name="email" value="{{email}}">
-            <div class="error-message profile-email-error">အီးလ်မေးလိပ်စာမှန်အောင်ပေးပါ</div>
+            <input type="text" placeholder="အီးမေးလ်" name="email" value="{{email}}">
+            <div class="error-message profile-email-error">အီးမေးလ်လိပ်စာမှန်အောင်ပေးပါ</div>
             <button type="button" onclick="app.updateProfile()">ပရိုဖိုင်ပြင်</button>
         </form>
 

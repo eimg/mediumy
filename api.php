@@ -580,7 +580,7 @@ function add_comment() {
     try {
         $author_name = "";
         $photo = "";
-        $author_id = "";
+        $author_id = 0;
 
         if($auth) {
             $result = $db->prepare("SELECT * FROM users WHERE id=? AND token=?");

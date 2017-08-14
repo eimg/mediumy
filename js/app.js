@@ -55,6 +55,7 @@ var app = {
                 app.closeModel();
                 router.refresh();
             }
+
             app.hideProgress();
         }, "json");
     },
@@ -104,13 +105,14 @@ var app = {
                     confirm: false
                 });
             } else {
-                app.closeModel();
                 app.showModelMessage({
                     message: "မှတ်ပုံတင်ခြင်းအောင်မြင်၍ လော့ဂ်အင်ဝင်နိုင်ပြီ",
                     close: "ကောင်းပြီ",
                     confirm: false
                 });
+                app.closeModel();
             }
+
             app.hideProgress();
         }, "json");
     },
@@ -145,12 +147,12 @@ var app = {
                     confirm: false
                 });
             } else {
-                app.closeModel();
                 app.showModelMessage({
                     message: "ပရိုဖိုင်ပြင်ပြီးသွားပါပြီ",
                     close: "ကောင်းပြီ",
                     confirm: false
                 });
+                app.closeModel();
                 router.refresh();
             }
 
@@ -405,7 +407,7 @@ var app = {
         }, function(res) {
             app.hideProgress();
             if(!res.error) {
-                var count = parseInt($(".comment-count .count").attr("data-count"));
+                var count = parseInt($(".comment-count .count").attr("data-count")) || 0;
                 $(".comment-count .count")
                     .attr("data-count", count + 1)
                     .html("မှတ်ချက် ("+ en2mmNums(count + 1) +") ခု");
@@ -506,17 +508,16 @@ var app = {
     toggleSubMenu: function(ele) {
         if($(ele).next(".sub-menu").is(":visible")) {
             app.unlockScroll();
+            $(".fa", ele).attr("class", "fa fa-angle-down");
             $(ele).next(".sub-menu").hide();
-            $(".fa", ele).attr("class", $(".fa", ele).attr("data-class"));
         } else {
             if(app.scrollLocked) {
                 $(".sub-menu").hide();
-                $(".fa", ele).attr("class", $(this).attr("data-class"));
+                $(".mobile-menu-trigger .fa").attr("class", "fa fa-angle-down");
                 app.unlockScroll();
             }
 
             app.lockScroll();
-            $(".fa", ele).attr("data-class", $(".fa", ele).attr("class"));
             $(".fa", ele).attr("class", "fa fa-close");
             $(ele).next(".sub-menu").show();
         }

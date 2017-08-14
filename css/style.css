@@ -153,7 +153,7 @@ header .sub-menu {
     padding: 15px 20px 5px 20px;
     list-style: none;
     position: absolute;
-    z-index: 99994;
+    z-index: 99991;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -570,7 +570,7 @@ header .sub-menu li .fa {
 /* === Model Dialogs - Login, Register, Profile === */
 .overlay {
     position: fixed;
-    z-index: 99995;
+    z-index: 99992;
     top: 0;
     left: 0;
     width: 100%;
@@ -582,7 +582,7 @@ header .sub-menu li .fa {
 
 .model {
     position: fixed;
-    z-index: 99996;
+    z-index: 99993;
     width: 30%;
     top: 10%;
     left: 33%;
@@ -679,6 +679,7 @@ header .sub-menu li .fa {
 }
 
 .model-body button {
+    font-family: inherit;
     margin-top: 40px;
     background: #3498DB;
     color: #fff;
@@ -725,6 +726,7 @@ header .sub-menu li .fa {
 
 .model-message {
     position: fixed;
+    z-index: 99998;
     top: 0;
     left: 0;
     width: 100%;

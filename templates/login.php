@@ -8,8 +8,8 @@
     </div>
     <div class="model-body">
         <form id="login-form">
-            <input name="email" type="text" placeholder="အီးလ်မေး">
-            <div class="error-message login-email-error">အီးလ်မေးလိပ်စာမှန်အောင်ပေးပါ</div>
+            <input name="email" type="text" placeholder="အီးမေးလ်">
+            <div class="error-message login-email-error">အီးမေးလ်လိပ်စာမှန်အောင်ပေးပါ</div>
             <input name ="password" type="password" placeholder="ပက်စ်ဝပ်">
             <div class="error-message login-password-error">ပက်စ်ဝပ်ပေးပါ</div>
             <button type="button" onclick="app.login()">လော့ဂ်အင်</button>
